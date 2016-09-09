@@ -2,7 +2,7 @@
 Tools/Visualizations for the Timeseries data collected on various entities 
 
 
-# Time Series Input CSV Format
+### Time Series Input CSV Format
 ```
 Date, Timestamp, EntityName, Param1, Param2, Param3, Param4, ...
 2016-09-09,11:37:00.270, Ent1, Val-111, Val-121, Val-131, Val-141, ... 
