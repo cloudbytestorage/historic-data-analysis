@@ -1,8 +1,13 @@
 # usage-analysis
-Tools/Visualizations for the Timeseries data collected on various entities 
+Tools/Visualizations for Historic data. 
 
+Historic data can include one or more metrics and can be collected from one or more entities. For example:
+- Network stats (in packets, out packets, in errs, out errs)  from different network interfaces of a system.
+- Processor stats (user, system, idle, interrupt) of different CPUs of a system. 
+- Storage Space Stats (used, available) of different disks in a system 
+- Storage Performance Stats (reads, writes, read throughput, write throughput ) of different disks in a system 
 
-### Time Series Input CSV Format
+The input data can be provided in the following format, where all the entities belong to the same category:
 ```
 Date, Timestamp, EntityName, Param1, Param2, Param3, Param4, ...
 2016-09-09,11:37:00.270, Ent1, Val-111, Val-121, Val-131, Val-141, ... 
