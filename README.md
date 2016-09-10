@@ -19,7 +19,7 @@ There can be multiple data input files, and each data input file can have multip
 
 > For example, CPU0, CPU1 stats can be provided in the same file, but not CPU0 and Disk0. 
 
-The input(csv) file format is as shown below:
+A sample input file format (csv) is as shown below:
 ```
 
 Date, Timestamp, EntityName, Param1, Param2, Param3, Param4, ...
