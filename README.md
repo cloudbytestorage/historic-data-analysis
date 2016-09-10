@@ -1,13 +1,21 @@
 # Historic Data Analysis
 Tools/Visualizations for Historic data. 
 
-Historic data can include one or more metrics and can be collected from one or more entities. For example:
+## Goal
+Based on the historic data collected from the system, the Visualizations should provide insights into usage patterns and abilitity to quickly detect anomolies/changes in the usage patterns.
+
+## Data Input Format
+Historic data can include one or more metrics and can be collected from one or more entities. 
+
+For example:
 - Network stats (in packets, out packets, in errs, out errs)  from different network interfaces of a system.
 - Processor stats (user, system, idle, interrupt) of different CPUs of a system. 
 - Storage Space Stats (used, available) of different disks in a system 
 - Storage Performance Stats (reads, writes, read throughput, write throughput ) of different disks in a system 
 
-The input data can be provided in the following format, where all the entities belong to the same category:
+There can be multiple data input files, and each data input file can have multiple entities belonging to the same group (entities that share the same metrics). For example, CPU0, CPU1 stats can be provided in the same file, but not CPU0 and Disk0. 
+
+The input(csv) file format is as shown below:
 ```
 Date, Timestamp, EntityName, Param1, Param2, Param3, Param4, ...
 2016-09-09,11:37:00.270, Ent1, Val-111, Val-121, Val-131, Val-141, ... 
@@ -21,7 +29,7 @@ Date, Timestamp, EntityName, Param1, Param2, Param3, Param4, ...
 2016-09-09,11:42:00.290, Ent3, Val-313, Val-323, Val-333, Val-343, ...
 
 ```
-
+There can be multiple data input files like above. 
 
 
 
